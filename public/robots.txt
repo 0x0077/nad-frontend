@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /blockchain
+Disallow: /utils
+
+# Host
+Host: https://nad.finance
+
+# Sitemaps
+Sitemap: https://nad.finance/sitemap.xml

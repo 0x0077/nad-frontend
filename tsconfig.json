@@ -1,0 +1,98 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "jsx": "preserve",
+    "types": [
+      "react",
+      "react-dom"
+    ],
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@/components/*": ["./src/components/*"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/hooks/*": ["./src/hooks/*"],
+      "@stores/*": ["./src/store/*"],
+      "@/blockchain/*": ["./src/components/blockchain/*"],
+
+      "@src": [
+        "./src"
+      ],
+      "@src/*": [
+        "./src/*"
+      ],
+      "@components": [
+        "./src/app/components"
+      ],
+      "@components/*": [
+        "./src/app/components/*"
+      ],
+      "@utils": [
+        "./src/app/utils"
+      ],
+      "@utils/*": [
+        "./src/app/utils/*"
+      ],
+      "@hooks": [
+        "./src/app/hooks"
+      ],
+      "@hooks/*": [
+        "./src/app/hooks/*"
+      ],
+      "@stores": [
+        "src/app/stores"
+      ],
+      // "@stores/*": [
+      //   "src/app/stores/*"
+      // ],
+      "@constants": [
+        "./src/app/constants"
+      ],
+      // "@constants/*": [
+      //   "./src/app/constants/*"
+      // ],
+      // "@blockchain": [
+      //   "./src/app/blockchain"
+      // ],
+      // "@blockchain/*": [
+      //   "./src/app/blockchain/*"
+      // ],
+      "@assets": [
+        "./assets"
+      ],
+      "@assets/*": [
+        "./assets/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "svg.d.ts"
+, "src/components/providers/ToastProvider.tsx"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
